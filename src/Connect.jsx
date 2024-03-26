@@ -126,7 +126,7 @@ export const Connect = ({ children }) => {
   }, [account, provider, validNetwork, children, switchNetwork]);
 
   if (error) {
-    return <p>No wallet has been found.</p>;
+    return <p className="text-white">No wallet has been found.</p>;
   }
 
   const connectInfos = (
